@@ -1,0 +1,7 @@
+.data
+	PI: .float 3.14	# print out a float (up to 6 digits past decimal)
+.text
+	li   $v0,  2	# print out float value (2)
+	lwc1 $f12, PI	# load in PI into $f12 register
+			# lwc1: load word coproc 1 (coprocessor 1)
+	syscall
